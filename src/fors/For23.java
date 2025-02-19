@@ -21,6 +21,7 @@ public class For23 {
             factorial*=i;
 
         }
+        System.out.println(Math.PI/6);
         System.out.println("sum="+sum);
     }
 }

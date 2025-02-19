@@ -17,5 +17,6 @@ public class For22 {
             factorial*=i;
         }
         System.out.println("sum="+sum);
+
     }
 }
