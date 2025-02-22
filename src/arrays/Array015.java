@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.Scanner;
 
-public class Array014 {
+public class Array015 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter array length:");
@@ -13,13 +13,15 @@ public class Array014 {
             System.out.print(a[i]+" ");
         }
         System.out.println();
-        System.out.print("even index:");
-        for(int i=1;i<n;i+=2){
-            System.out.print(a[i]+" ");
-        }
-        System.out.print("Odd index:");
+        int j=a.length-1-n%2;
         for(int i=0;i<n;i+=2){
             System.out.print(a[i]+" ");
         }
+        for(int i=j;i>=1;i-=2){
+            System.out.print(a[i]+" ");
+
+        }
+
+
     }
 }

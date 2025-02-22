@@ -1,4 +1,3 @@
-/*
 package functions;
 
 import java.util.Scanner;
@@ -31,4 +30,3 @@ public class FunSimple11 {
 
     }
 }
-*/
