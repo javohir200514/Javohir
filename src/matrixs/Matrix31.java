@@ -20,27 +20,27 @@ public class Matrix31 {
         int totolSum=0;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                totolSum+=matrix[j][i];
+                totolSum+=matrix[i][j];
             }
         }
         int  totolMeanArifmetic=totolSum/(m*n);
-        int meanArifmetic=0,sum=0,min=Integer.MAX_VALUE,index=0;
+        System.out.println("Totol mean arifmetic:"+totolMeanArifmetic);
+        int meanArifmetic=0,sum=0,min=Integer.MAX_VALUE,index=0,near=0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j <m ; j++) {
                 sum+=matrix[j][i];
             }
             meanArifmetic=sum/m;
             System.out.println(i+"-column mean arifmetik value:"+meanArifmetic);
-            for (int j = 0; j < m; j++) {
                 if(Math.abs(meanArifmetic-totolMeanArifmetic)<min){
-                min=meanArifmetic;
+                min=Math.abs(meanArifmetic-totolMeanArifmetic);
                 index=i;
+                near=meanArifmetic;
                 }
-            }
             sum=0;
         }
 
-        System.out.println(index+"-meanArifmetic:"+min);
+        System.out.println(index+"-meanArifmetic:"+near);
 
 
 
